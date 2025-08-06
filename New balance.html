@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Balance</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1em;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #000;
+      padding: 1em;
+      top: 100%;
+      left: 0;
+    }
+
+    nav li:hover .dropdown-content {
+      display: block;
+    }
+
+    .carousel {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+      position: relative;
+    }
+
+    .productos {
+      padding: 2em;
+      background-color: #f4f4f4;
+    }
+
+    .productos h2 {
+      text-align: center;
+    }
+
+    .grid-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2em;
+      padding: 2em 0;
+    }
+
+    .producto {
+      background: #fff;
+      padding: 1em;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .producto h3 {
+      margin: 0.5em 0;
+    }
+
+    .producto p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .producto span {
+      display: block;
+      margin: 0.5em 0;
+      font-weight: bold;
+    }
+
+    .producto button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .info-section {
+      padding: 2em;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .info-section img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>New Balance</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="productos.html">Productos</a>
+          <div class="dropdown-content">
+            <a href="#">Tenis Hombre</a>
+            <a href="#">Tenis Mujer</a>
+            <a href="#">Accesorios</a>
+          </div>
+        </li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.TEbS8hCBDU3xTeVwbxk9YgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="active" alt="Tenis 1">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.1ocK53-3AE_09-ohaY8gWAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tenis 2">
+      <img src="https://th.bing.com/th/id/R.b274ac13ea7b66641572f363308a823a?rik=fpQLGR%2fk5vGABw&pid=ImgRaw&r=0" alt="Tenis 3">
+    </div>
+
+
+    <!-- Info Marca -->
+    <section class="info-section">
+      <h2>Sobre New Balance</h2>
+      <p>
+        New Balance es una marca globalmente reconocida por combinar tecnología avanzada con diseño clásico. Desde sus inicios en Boston en 1906, ha sido sinónimo de comodidad, rendimiento y estilo.
+      </p>
+      <img src="https://th.bing.com/th/id/R.1b56ba4438c7e0dc0d68807d429aa7ea?rik=G9H6ix3X7gQlwA&pid=ImgRaw&r=0" alt="Historia New Balance">
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 New Balance México. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+

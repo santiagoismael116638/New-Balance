@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - New Balance</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1em;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .productos {
+      padding: 2em;
+    }
+
+    .productos h2 {
+      text-align: center;
+    }
+
+    .grid-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2em;
+      padding: 2em 0;
+    }
+
+    .producto {
+      background: #fff;
+      padding: 1em;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .producto h3 {
+      margin: 0.5em 0;
+    }
+
+    .producto p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .producto span {
+      display: block;
+      margin: 0.5em 0;
+      font-weight: bold;
+    }
+
+    .producto button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>New Balance</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="productos">
+      <h2>Catálogo de Productos</h2>
+      <div class="grid-productos">
+
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/mr530sh_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="New Balance 530">
+          <h3>New Balance 530</h3>
+          <p>Estilo retro y comodidad. Ideal para uso diario.</p>
+          <span>$2,240 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/u9060md1_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="New Balance 9060">
+          <h3>New Balance 9060</h3>
+          <p>Diseño chunky moderno y gran amortiguación.</p>
+          <span>$3,597 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/mr530ca_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="NB 530 Indigo">
+          <h3>NB 530 Indigo</h3>
+          <p>Blanco con detalles índigo. Look limpio y moderno.</p>
+          <span>$4,860 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.euq6a5IfvUNp1Q9NMZIx0wHaFL?rs=1&pid=ImgDetMain&o=7&rm=3" alt="New Balance 740">
+          <h3>New Balance 740</h3>
+          <p>Diseño clásico renovado para estilo urbano.</p>
+          <span>$1,819 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="producto">
+          <img src="https://th.bing.com/th/id/OIP.C5AfFF5tmgnW-F9NT94BWwHaHa?w=195&h=195&c=7&r=0&o=7&pid=1.7&rm=3" alt="574 Legacy">
+          <h3>New Balance 574 Legacy</h3>
+          <p>Diseño icónico con suela reforzada.</p>
+          <span>$1,899 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/ml725aa_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="New Balance 725">
+          <h3>New Balance 725</h3>
+          <p>Inspirado en los 2000s. Deportivo y ligero.</p>
+          <span>$2,299 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/m2002rwb_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="NB 2002R">
+          <h3>New Balance 2002R</h3>
+          <p>Comodidad premium con amortiguación ABZORB.</p>
+          <span>$3,999 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="producto">
+          <img src="https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="NB 574 Classic">
+          <h3>New Balance 574 Classic</h3>
+          <p>Clásico atemporal con confort duradero.</p>
+          <span>$2,149 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="producto">
+          <img src="https://th.bing.com/th/id/R.512166d64b1927a6fcda6acbe9b29439?rik=jP63M6Z9YrN4yA&pid=ImgRaw&r=0" alt="NB 574 Lunar Glow">
+          <h3>NB 574 Lunar Glow</h3>
+          <p>Edición especial con acabados brillantes.</p>
+          <span>$2,599 MXN</span>
+          <button>Comprar</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 New Balance México. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
